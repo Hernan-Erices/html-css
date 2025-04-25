@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aquamarine;
+}
+
+.box{
+    width: 200px;
+    height: 300px;
+    background-color: white;
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+    left: 0;
+    border: 2px solid #000;
+    overflow: scroll;
+    /* Esta propiedad fuerza a que el contenido que se desborda del contenedor
+    se muestre con barras de desplazamiento (scroll), tanto en el eje horizontal
+   como en el vertical, incluso si no son necesarias. */
+}
+
+/*
+https://developer.mozilla.org/en-US/docs/Web/CSS/overflow
+*/

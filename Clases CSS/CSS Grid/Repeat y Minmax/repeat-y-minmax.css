@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.grid{
+    display: grid;
+    height: 80vh;
+    /* grid-template-columns: 100px repeat(4, 1fr) 300px; Crea 6 columnas:
+    - la primera mide 100px (fija),
+    - luego 4 columnas iguales que comparten el espacio disponible (1fr cada una),
+    - y la última mide 300px (fija) */
+
+    /* grid-template-columns: repeat(3, 2fr 1fr) /* Esto repite un patron */
+
+    /* grid-template-columns: 200px 100px minmax(300px,500px); /* Aqui usamos el minmax, es decir le damos un minimo y un maximo de cuanto se puede agrandar */
+    
+    grid-template-columns: repeat(4,minmax(100px, 300px)); /* Crea 4 columnas que tienen un ancho mínimo de 100px y 300px (tambien podemos usar medidas fr */
+    
+    
+    grid-template-rows: repeat(2,200px) 1fr; /* Crea 2 filas de 200px y una fila que ocupa el espacio restante (1fr) */
+}
+
+.grid-item{
+    background-color: #48e;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.grid-item:first-child{
+    background-color: #f00;
+}
+
+
+
+/*
+repear: https://developer.mozilla.org/es/docs/Web/CSS/repeat
+minmax: https://developer.mozilla.org/es/docs/Web/CSS/minmax
+*/

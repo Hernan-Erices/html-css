@@ -1,0 +1,49 @@
+/* SELECTORES POR ATRIBUTOS */
+
+/*Aqui estamos selecionando a todas las imagenes que tengan el 
+img[src="harina.jpg"] es decir solo seleciona las imageens con el mismo source
+*/
+img[src="harina.jpg"] {
+}
+
+/*Aqui estamos selecionando a todas las imagenes que tengan el 
+img[src$="jpg"] es decir solo que solo terminen con el jpg
+*/
+img[src$="jpg"] {
+}
+
+/*Aqui estamos selecionando a todas las imagenes que tengan el 
+img[src^="harina"] es decir solo seleciona las imagenest que 
+comiensan por 'nombre-cualquiera'
+*/
+img[src^="harina"]{
+    width: 100%;
+}
+
+/* SELECTORES DESCENDIENTES */
+ul li {
+    color: rgb(234, 0, 255);
+}
+
+/* SELECTOR POR HIJO DIRECTO */ 
+/* > = queriendo decir strong es hijo de ul*/
+ul > strong {
+    color: rgb(68, 0, 255);
+}
+
+
+/* SELECTOR DE HERMANO ADYACENTE */ 
+/* es el elemento que le sigue inmediatamente al anterior se pude hacer infinitamente */ 
+h1 + p {
+    color: rgb(233, 2, 2);
+}
+
+h1 + p + p{
+    color: rgb(233, 2, 2);
+}
+
+/* SELECTOR DE HERMANO GENERALES */ 
+/* todos los elementos p que le siguen despues del h1 */ 
+h1 ~ p {
+    color:rgb(0, 245, 33)
+}

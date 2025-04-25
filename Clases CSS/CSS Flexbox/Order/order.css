@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aquamarine;
+}
+
+.flexbox{
+    height: 500px;
+    border: 2px solid #000;
+    margin: 20px;
+    display: flex;
+    flex-flow: column wrap; 
+    justify-content:space-around;
+    align-items:start;
+    align-content: start;
+
+}
+
+.flex-item{
+    width: 100px;
+    background-color: red;
+    margin: 10px;
+    color: #fff;
+    text-align:center;
+    margin: auto;
+    font-size: 40px;
+    order:2; /*cambia el orden los items unicamente visual*/
+}
+
+.flex-item:first-child{
+    background-color: blueviolet;
+    order: 1; /*todos los elementos flex tienen un order:0 por defecto*/
+}
+
+.flex-item:last-child{
+    background-color: rgb(226, 230, 6);
+    order: 3;
+}
+
+/*
+Order o ordenamiento con flexbox: https://developer.mozilla.org/en-US/docs/Web/CSS/order
+*/

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>text area y labels</title>
+</head>
+<body>
+    <form>
+        <h2>Formulario de contacto</h2>
+        <fieldset> <legend>Esto es un fieldset y este texto esta en un legend</legend>
+        <div class="form-input">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" type ="text" placeholder="Nombre" required>
+        </div>
+        <div class="form-input">
+            <label for="password">Contrasena</label>
+            <input id="password" type ="password" placeholder="Contrasena" required>
+        </div>
+        <div class="form-input">
+            <label>Text area
+                <textarea  rows="10" maxlength="100" placeholder="Esto es un area de texto" required></textarea>
+            </label>
+        </div>
+        </fieldset>
+
+
+        <fieldset> <legend>Esto es un fieldset y este texto esta en un legend</legend>
+        <div class="form-input">
+            <label>esto es un select
+                <select>
+                    <option value="opcion1">Opcion 1</option>
+                    <option value="opcion2">Opcion 2</option>
+                    <option value="opcion3">Opcion 3</option>
+                    <option value="opcion4">Opcion 4</option>
+                </select>
+            </label>
+            
+        </div>
+        <div class="form-input">
+            <label>esto es un datalist
+                <input list="datalist" placeholder="Datalist" required>
+                <datalist id="datalist">
+                    <option value="Opcion 1"></option>
+                    <option value="Opcion 2"></option>
+                    <option value="Opcion 3"></option>
+                    <option value="Opcion 4"></option>
+                </datalist>
+            </label>
+        </div>
+    </fieldset>
+    </form>
+    
+</body>
+</html>

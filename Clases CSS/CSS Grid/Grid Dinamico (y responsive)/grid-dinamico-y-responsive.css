@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(48, 4, 66);
+}
+
+body,div{
+    box-sizing: border-box;
+}
+
+.grid{
+
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit,minmax(200px, 1fr)); /* Esto hace que la grilla se adapte al tamaño de la pantalla, creando tantas columnas como sea posible con un ancho mínimo de 200px y un ancho máximo de 1fr (una fracción del espacio disponible) */
+    grid-template-columns: repeat(auto-fill,minmax(250px, 1fr)); /* Esto hace que la grilla se rellene al tamaño de la pantalla, creando tantas columnas como sea posible con un ancho mínimo de 200px y un ancho máximo de 1fr (una fracción del espacio disponible) */
+    grid-template-rows: repeat(3, 200px);
+    grid-auto-rows: 1fr; 
+    grid-auto-columns: 1fr;
+    grid-auto-flow: row;
+    margin: auto; 
+    margin-top: 30px;
+    gap: 20px;
+}   
+
+.grid-item{
+    background-color: #48e;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.grid-item:first-child{
+    background-color: #f00;
+}
+
+
+
+/*
+auto-fill: https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill
+Intenta llenar el contenedor con el mayor número de columnas posibles, incluso si están vacías.
+Si hay espacio extra, se crean pistas (tracks) vacías que no colapsan.
+Bueno si quieres mantener la estructura del grid, aunque no haya contenido en todas las columnas.
+
+auto-fit:
+Intenta ajustar las columnas al contenido disponible y colapsa las columnas vacías.
+Si hay espacio de sobra, los elementos se expanden para ocuparlo.
+Perfecto para que el contenido se distribuya de forma más natural y flexible.
+*/

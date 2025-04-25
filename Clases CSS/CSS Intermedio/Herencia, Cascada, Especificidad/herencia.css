@@ -1,0 +1,30 @@
+/* HERENCIA EN CSS */
+
+/* Primera regla para body (será sobrescrita por la siguiente) */
+body {
+    color: blueviolet; /* Se define el color del texto (heredable), pero será reemplazado */
+    font-family: 'Courier New', Courier, monospace; /* Fuente heredable, también será reemplazada */
+}
+
+/* Segunda regla para body (esta sí se aplica, ya que viene después) */
+body {
+    color: green; /* El texto será verde a menos que un hijo lo sobrescriba */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+                'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    /* Fuente aplicada al body, y heredada por sus hijos si no la cambian */
+}
+
+/* Regla para h1 (tiene múltiples valores de color, solo el último se aplica) */
+h1 {
+    color: red;       /* Color explícito (sería rojo) */
+    color: inherit;   /* Heredaría el color del padre (verde) */
+    color: initial;   /* Volvería al color por defecto del navegador (negro) */
+    color: unset;     /* En propiedades heredables como color, actúa como inherit (verde) */
+    color: revert;    /* Revierte al valor por defecto del navegador o del user-agent stylesheet */
+    /* Como esta es la última línea, es la que se aplica: el color del h1 será el predeterminado del navegador */
+}
+
+/* Regla para los párrafos */
+p {
+    color: blue; /* Este color anula la herencia: todos los <p> serán azules */
+}

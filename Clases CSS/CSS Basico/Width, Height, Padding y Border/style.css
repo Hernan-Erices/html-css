@@ -1,0 +1,60 @@
+body{
+    margin: 0px;
+}
+
+.box {
+    background: red;
+    padding: 20px; /* Cambia el relleno de la caja a 20px */
+    height: 20px; /* Cambia la altura de la caja a 20px */
+    width: 20px; /* Cambia el ancho de la caja a 20px */
+    margin:10px; /* Cambia el margen de la caja a 20px */
+}
+
+.box_grande {
+    margin: 50px;
+}
+
+.box_1 {
+    background: rgb(90, 247, 0);
+    padding: 30px;
+    height: 20px;
+    width: 20px;
+    margin:20px;
+}
+
+.box_2 {
+    background: rgb(0, 204, 255);
+    padding: 30px;
+    height: 20px;
+    width: 20px; 
+    margin:30px;
+}
+
+
+h1 {
+    background: blue;
+    width: 50%; /* Cambia el ancho del h1 al 50% del contenedor padre */
+    height: 50px; /* Cambia la altura del h1 a 50px */
+}
+
+.formulario {
+    background: rgb(4, 0, 248);
+    padding: 50px 20px 20px 50px; /* Cambia el relleno del formulario a todos los lados */
+    padding: 20px 50px; /* Cambia el relleno del formulario a 20px arriba y abajo y 50px a los lados */
+}
+
+.formulario_input {
+    padding: 10px; /* Cambia el relleno del input a 10px */
+    background: seagreen; /* Cambia el color de fondo del input a verde mar */
+    border: 5px solid black; /* Cambia el borde del input a 5px sólido */
+    width: 100%; /* Cambia el ancho del input al 100% del contenedor padre */
+    margin: 10px; /* Cambia el margen del input a 5px */
+}
+
+.formulario_submit {
+    padding: 4px 4px;
+    letter-spacing: 10px; /* Cambia el espaciado entre letras del botón a 2px */
+    text-transform: uppercase; /* Cambia la transformación del texto del botón a mayúsculas */
+    background: rgb(255, 217, 0);
+    color: rgb(255, 0, 149); /* Cambia el color del texto del botón a rojo */
+}

@@ -1,0 +1,86 @@
+/* EJEMPLOS DE EMMET EN CSS */
+
+/* Emmet: m10 */
+/* Aplica un margen de 10px en los cuatro lados */
+.margin-ejemplo {
+    margin: 10px;
+}
+
+/* Emmet: p20-10 */
+/* Padding vertical (top y bottom) de 20px y horizontal (left y right) de 10px */
+.padding-ejemplo {
+    padding: 20px 10px;
+}
+
+/* Emmet: bgc#f00 */
+/* Establece el color de fondo en rojo */
+.fondo-rojo {
+    background-color: #f00;
+}
+
+/* Emmet: bd1pxs#000 */
+/* Borde de 1px sólido color negro */
+.borde-negro {
+    border: 1px solid #000;
+}
+
+/* Emmet: w100p */
+/* Ancho al 100% del contenedor */
+.ancho-completo {
+    width: 100%;
+}
+
+/* Emmet: h50px */
+/* Alto de 50 píxeles */
+.alto-fijo {
+    height: 50px;
+}
+
+/* Emmet: d:f */
+/* Activa el modelo Flexbox */
+.flex {
+    display: flex;
+}
+
+/* Emmet: jc:c */
+/* Centra el contenido horizontalmente */
+.justificar-centro {
+    justify-content: center;
+}
+
+/* Emmet: ai:c */
+/* Centra el contenido verticalmente */
+.alinear-centro {
+    align-items: center;
+}
+
+/* Emmet: pos:a */
+/* Posicionamiento absoluto */
+.absoluto {
+    position: absolute;
+}
+
+/* Emmet: t0, l0 */
+/* Posición en la esquina superior izquierda del contenedor */
+.arriba-izquierda {
+    top: 0;
+    left: 0;
+}
+
+/* Emmet: c#fff */
+/* Color de texto blanco */
+.texto-blanco {
+    color: #fff;
+}
+
+/* Emmet: fs16 */
+/* Tamaño de fuente 16px */
+.fuente-mediana {
+    font-size: 16px;
+}
+
+
+/*
+MAS SOBRE EMMET: https://www.freecodecamp.org/espanol/news/untitled-11/
+OFICIAL: https://docs.emmet.io/
+*/

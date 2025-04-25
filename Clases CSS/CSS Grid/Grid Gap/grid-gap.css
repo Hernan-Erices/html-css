@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(48, 4, 66);
+}
+
+body,div{
+    box-sizing: border-box;
+}
+
+.grid{
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-auto-rows: 150px; 
+    grid-auto-columns: 100px;
+    grid-auto-flow: row;
+
+
+    gap: 20px; /* Espacio entre los elementos de la grilla, recomendable usar gap antes que margin row/column*/
+    padding: 20px; /* Espacio entre el borde de la grilla y los elementos */
+    width: 90vw; /* Ancho de la grilla */
+    margin: auto; /* Centra la grilla en la pantalla */
+    margin-top: 30px;
+}   
+
+.grid-item{
+    background-color: #48e;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.grid-item:first-child{
+    background-color: #f00;
+}
+
+
+
+/*
+
+*/

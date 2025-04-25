@@ -1,0 +1,19 @@
+/* 1. Estilo general para todos los párrafos */
+p {
+    color: blue; /* Este será el color base */
+    }
+
+  /* 2. Estilo más específico: clase contenedora que afecta al párrafo */
+.contenedor p {
+    color: green; /* Este sobreescribe al anterior por ser más específico */
+    }
+
+  /* 3. Estilo aún más específico: usa ID */
+#parrafo {
+    color: red; /* Este tiene mayor especificidad, así que gana */
+    }
+
+  /* 4. Aun si este viene después, no ganará contra el ID */
+p {
+    color: orange; /* La cascada lo dejaría ganar solo si la especificidad fuera igual o mayor, pero no lo es */
+    }

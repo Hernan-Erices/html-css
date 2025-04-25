@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(55, 4, 35, 0.211);
+    color: white;
+    box-sizing: border-box;
+}
+
+div{
+    box-sizing: border-box;
+        border: 1px solid #fa0101;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+
+    justify-items: stretch;
+    justify-content: space-evenly;
+    align-items: stretch;
+    align-content: start; 
+    border:2px solid #000;
+}
+
+
+
+.grid-item:first-child{
+    background-color: #48e;
+    align-self: stretch;
+    grid-area: 3/1/span 2/ span 2; /* grid-area: row-start/column-start/span-row/span-column; */
+    display: grid;
+    grid-template-columns: subgrid; /* subgrid hace que la grilla tome las columnas de la grilla padre */
+    grid-template-rows: subgrid; /* subgrid hace que la grilla tome las filas de la grilla padre */
+
+    gap: 10px;
+    padding: 0;
+    background: transparent; /* hace que el fondo sea transparente para que se vea el fondo de la grilla padre */
+
+}
+
+.subgrid-item{
+    background-color: rgb(232, 6, 36);
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+    width: 300px;
+}
+
+.subgrid-item:first-child{ 
+    order: 2;
+    background-color: black;
+}
+
+.grid-item{
+    background-color: #48e;
+    font-size: 30px;
+    max-width: 100%;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.grid-item:hover{   
+    opacity: 0.7;
+}
+
+/*
+Subgrid: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Subgrid
+*/

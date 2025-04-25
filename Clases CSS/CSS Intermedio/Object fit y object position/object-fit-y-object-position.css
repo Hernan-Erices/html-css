@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aliceblue;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+
+    /* Hace que el contenido del elemento (como una imagen o video) 
+    se ajuste al tamaño del contenedor, manteniendo su proporción original
+   sin recortarse. Si no encaja exactamente, se verá completo pero con espacio alrededor. */
+    object-fit:contain;
+
+    /* Define la posición del contenido dentro del contenedor cuando 'object-fit' no llena completamente.
+    En este caso, alinea el contenido hacia la parte superior del contenedor. */
+    object-position: top;
+
+    border: 2px solid #000;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+/*
+OBJECT POSITION: https://developer.mozilla.org/en-US/docs/Web/CSS/object-position
+OBJECT FIT: https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit
+*/

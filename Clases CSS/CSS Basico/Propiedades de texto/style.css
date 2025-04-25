@@ -1,0 +1,18 @@
+p {
+    color: brown; /* Cambiamos el color del texto a marrón */
+    font-family:"Bungee Spice", sans-serif; /* Cambiamos la fuente de letra externa*/
+    font-size: 32px; /* Cambiamos el tamaño de la fuente a 32px */
+    font-weight: bold; /* Cambiamos el peso de la fuente a negrita */
+    font-style: italic; /* Cambiamos el estilo de la fuente a cursiva */
+    text-align: justify; /* Cambiamos la alineación del texto a justificado */
+    text-decoration: line-through; /* Cambiamos la decoración del texto a tachado */
+    line-height: 1.5; /* Cambiamos la altura de la línea a 1.5 */
+    letter-spacing: 20px; /* Cambiamos el espaciado entre letras a 20px */
+    text-transform: uppercase; /* Cambiamos la transformación del texto a mayúsculas */
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+    font-size: 32px;;
+}

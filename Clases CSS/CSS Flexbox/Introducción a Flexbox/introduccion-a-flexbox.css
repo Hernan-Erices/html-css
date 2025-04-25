@@ -1,0 +1,37 @@
+/* Estilo general del body para centrar el contenedor */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;              /* Flex en el body para centrar el contenedor */
+    justify-content: center;   /* Centra horizontalmente */
+    align-items: center;       /* Centra verticalmente */
+    height: 100vh;             /* Altura total del viewport */
+    background-color: #f0f0f0;
+    }
+
+/* Contenedor Flexbox */
+.contenedor {
+    display: flex;                 /* Activamos Flexbox en este contenedor */
+    flex-direction: row;          /* Direcciona los hijos en fila (horizontal) */
+    justify-content: space-around;/* Espacio alrededor de los elementos hijos */
+    align-items: center;          /* Centra verticalmente dentro del contenedor */
+    width: 80%;
+    max-width: 600px;
+    height: 200px;
+    background-color: #ddd;
+    border: 2px solid #aaa;
+    border-radius: 10px;
+    padding: 10px;
+    }
+
+/* Estilos para las cajas hijas */
+.caja {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 8px;
+    flex: 1;                   /* Cada caja crece para ocupar el mismo espacio */
+    margin: 0 10px;            /* Separación entre cajas */
+    }

@@ -1,0 +1,42 @@
+/* ::before — Inserta contenido antes del elemento */
+.intro::before {
+    content: "📌 ";
+    color: red;
+    font-weight: bold;
+    }
+
+/* ::after — Inserta contenido después del elemento */
+.intro::after {
+    content: " ✔";
+    color: green;
+    font-weight: bold;
+    }
+
+/* ::first-line — Estiliza solo la primera línea visible del párrafo */
+.intro::first-line {
+    font-style: italic;
+    color: darkblue;
+    }
+
+  /* ::first-letter — Estiliza solo la primera letra */
+.titulo::first-letter {
+    font-size: 2em;
+    color: orange;
+    }
+
+/* Ejemplo decorativo con ::before y ::after para una caja */
+.caja::before {
+    content: "🔹 INICIO 🔹";
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+    color: blue;
+    }
+
+.caja::after {
+    content: "🔸 FIN 🔸";
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    color: darkred;
+    }

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+
+    <!--Esta es la estructura de un formulario en html y atributos importantes-->
+    <form action="">
+        <!-- input type = text que es para escribir texto -->
+        <input type="text" required name="username" placeholder="Nombre de usuario">
+        <input type="password" required name="password" placeholder="Contraseña" >
+        <input type="email" required name="email" placeholder="Email" >
+        <input type="submit" name="submit" id="submit" value="enviar formulario">
+    </form>
+
+
+    <br>
+    <br>
+
+<h1>Formularios tipos de inputs</h1>
+    <form action="">
+        <!-- input type = text que es para escribir texto -->
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+        <!-- input type = radio que es para seleccionar algunas una sola de las opciones y asi existen muchas mas tipos de inputs-->
+        <input type="radio" name="sexo" id="sexo" value="hombre"> Hombre
+        <input type="radio" name="sexo" id="sexo" value="mujer"> Mujer
+        <h2>Tipo Submit</h2> <br>
+        <input type="submit" name="submit" id="submit" value="enviar formulario"> <br>
+        <h2>Tipo Email</h2> <br>
+        <input type="email" name="email" id="email" placeholder="Email"> <br>
+        <h2>Tipo password</h2> <br>
+        <input type="password" name="password" id="password" placeholder="Contraseña"> <br>
+        <h2>Tipo number</h2> <br>
+        <input type="number" name="numero" id="numero" placeholder="Numero"> <br>
+        <h2>Tipo date</h2> <br>
+        <input type="date" name="fecha" id="fecha" placeholder="Fecha"> <br>
+        <h2>Tipo color</h2> <br>
+        <input type="color" name="color" id="color" placeholder="Color"> <br> 
+        <h2>Tipo file</h2> <br>
+        <input type="file" name="archivo" id="archivo" placeholder="Archivo"> <br>
+        <h2>Tipo checkbox</h2> <br>
+        <input type="checkbox" name="terminos" id="terminos" value="acepto"> Acepto los terminos y condiciones <br>
+        <input type="checkbox" name="terminos" id="terminos" value="noacepto"> No acepto los terminos y condiciones <br>
+        <h2>Tipo reset</h2> <br>
+        <input type="reset" name="reset" id="reset" value="Limpiar formulario"> <br>
+        <h2>Tipo button</h2> <br>
+        <input type="button" name="button" id="button" value="Boton" onclick="alert('Hola mundo')"> <br>
+        <h2>Tipo hidden</h2> <br>
+        <input type="hidden" name="oculto" id="oculto" value="valor oculto"> <br>
+        <h2>Tipo Textarea</h2> <br>
+        <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Textarea"></textarea> <br>
+        <h2>Tipo select</h2> <br>
+        <select name="select" id="select">
+            <option value="opcion1">Opcion 1</option>
+            <option value="opcion2">Opcion 2</option>
+        </select> <br>
+    </form>
+
+</body>
+
+</html>

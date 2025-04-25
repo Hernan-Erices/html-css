@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aliceblue;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #fff;
+    border: 2px solid #000;
+
+    /*control de flujo del texto*/
+/* Evita que el texto haga saltos de línea automáticamente.
+   Todo el contenido se mantendrá en una sola línea, aunque se desborde. */
+    white-space: nowrap;
+
+/* Si el texto se desborda del contenedor, se reemplaza el contenido extra
+    con puntos suspensivos (…) para indicar que hay más texto. 
+    Solo funciona si también se usa 'overflow: hidden' o 'scroll' en conjunto. */
+    text-overflow: ellipsis;
+/* Rompe las palabras en cualquier parte si es necesario para evitar desbordes.
+    No respeta sílabas ni estructura de palabras. */
+    word-break: break-all;
+
+/* Permite que las palabras largas se dividan y pasen a la línea siguiente 
+    si no caben en el contenedor. Más respetuoso que break-all. */
+    word-wrap: break-word;
+
+/* Ajuste moderno del texto: busca un equilibrio entre legibilidad y uso del espacio.
+    Es más "inteligente" al cortar líneas, aunque no está soportado por todos los navegadores. */
+    text-wrap: pretty;
+    }
+
+/* En los elementos <h1>, se aplica una estrategia de ajuste especial
+    que balancea visualmente las líneas de texto para que se vean simétricas y estéticas. */
+    h1 {
+        text-wrap: balance;
+    }
+
+
+/*
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_text/Wrapping_breaking_text
+*/

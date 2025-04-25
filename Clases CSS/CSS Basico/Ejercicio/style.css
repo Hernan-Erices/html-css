@@ -1,0 +1,54 @@
+body {
+    background: rgb(126, 115, 98);
+    font-family: 'Courier New', Courier, monospace;
+    color:white;
+}
+
+.card {
+    background: rgb(5, 9, 212);
+    text-align: center;
+    width: 400px;
+    margin : auto; /* centramos la tarjeta horizontalmente */
+    margin-top: 20px; /* margen superior de 20px */
+    border: 5px double rgb(0, 0, 0); /* borde de 5px de grosor, doble y color rojo */
+    border-radius: 20%; /* redondeamos las esquinas de la tarjeta */
+    padding: 20px; /* margen interno de 20px */
+}
+
+h1{
+    font-size: 30px;
+    padding-top: 10px;
+    font-weight: bold;
+    margin: 0;
+}
+
+h2{
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+p{
+    text-align: justify;
+    font-size: 15px;
+    font-style: italic;
+    padding: 20px;
+    background-color: rgb(224, 19, 19);
+    border-top-right-radius: 80px;
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+
+    border-radius: 30px 50px 30px 50px; /* redondeamos las esquinas de la tarjeta */
+}
+
+input{
+    margin: 5px;
+    border: none;
+    padding: 6px 9px;
+    border-top: 1px solid black;
+    background: rgb(177, 179, 185);
+    width: 200px;
+    height: 30px;
+    text-align: center;
+}

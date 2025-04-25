@@ -1,0 +1,35 @@
+/* Aqui seleccionamos elementos por etiquetas */
+/* body { /* Seleccionamos el elemento "body" */
+
+p { /* Esto es una seleccion del elemento, seleccionamos "p" del archivo html */
+    color: rgb(255, 83, 3); /* Cambiamos el color del texto a azul */
+}
+
+ /* li { Seleccionamos el elemento "li" */
+    /* color: red;
+} */
+
+h1 { /* Seleccionamos el elemento "h1" */
+    color: green;
+}
+
+
+/* Aqui seleccionamos elementos por clases */
+/* .nombre-clase { /* Seleccionamos la clase "nombre-clase" */
+.ingrediente-faltante {
+    color: red;
+}
+
+/* aqui seleccionamos elementos por id, el id es unico no puede haber
+otro elemento con el mismo id en la pagina, es de mala practica si existen
+2 o mas elementos con el mismo id, para eso se usan las clases
+
+#nombre-id { /* Seleccionamos el id "nombre-id"
+#ingrediente-secreto {
+    color: red;
+}
+
+*/
+#ingrediente-secreto {
+    color: blue;
+}

@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aquamarine;
+}
+
+.flexbox {
+    height: 100px;
+    border: 2px solid #000;
+    margin: 20px;
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: start;
+    align-items: center;
+
+    /* Este contenedor usa flexbox para alinear los elementos en fila */
+}
+
+.flex-item {
+    width: 200px;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    margin: auto;
+
+    /* FLEX-GROW: determina cuánto crecerá el ítem si hay espacio extra */
+    flex-grow: 1; /* Cada ítem crecerá proporcionalmente si hay espacio */
+
+    /* FLEX-SHRINK: determina cuánto puede encogerse el ítem si el espacio es insuficiente */
+    flex-shrink: 1; /* Puede reducir su tamaño si no cabe */
+
+    /* FLEX-BASIS: define el tamaño base del ítem antes de aplicar grow o shrink */
+    flex-basis: 150px; /* Parte desde este tamaño base, ignorando width si se define */
+}
+
+/* Este primer hijo tiene un color distinto, pero las mismas reglas de flex */
+.flex-item:first-child {
+    background-color: blueviolet;
+
+    flex-grow: 2; /* Este ítem crecerá el doble que los otros */
+    flex-shrink: 1;
+    flex-basis: 100px; /* Parte de un tamaño más pequeño */
+}
+
+/* El último ítem también tiene un color diferente */
+.flex-item:last-child {
+    background-color: rgb(226, 230, 6);
+    flex-grow: 1;
+    flex-shrink: 2; /* Se encoge más fácilmente que los demás */
+    flex-basis: 200px;
+}
+
+/*
+flex-grow: permite que los ítems crezcan si hay espacio libre.
+    - Ejemplo: grow: 2 crecerá el doble que grow: 1 si sobra espacio.
+
+flex-shrink: permite que los ítems se encojan si no hay espacio suficiente.
+    - shrink: 0 → no se encoge, shrink: 1 → se encoge normal, shrink: 2 → se encoge más.
+
+flex-basis: define el tamaño base del ítem (como si fuera "width", pero más flexible).
+    - Este tamaño puede ser sobreescrito por grow/shrink si es necesario.
+
+TIP: También puedes usar la notación corta: `flex: grow shrink basis;`
+    Ejemplo:
+    flex: 1 1 150px; → grow=1, shrink=1, basis=150px
+*/
+
+/*
+FLEX SHRINK: https://developer.mozilla.org/es/docs/Web/CSS/flex-shrink
+FLEX GROW: https://developer.mozilla.org/es/docs/Web/CSS/flex-grow
+FLEX BASIS: https://developer.mozilla.org/es/docs/Web/CSS/flex-basis
+*/

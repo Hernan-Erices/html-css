@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aquamarine;
+}
+
+.flexbox{
+    display: flex;
+    flex-direction: column-reverse;
+    direction:ltr;
+}
+
+.flex-item{
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    margin: 10px;
+
+    color: #fff;
+    text-align:center;
+    font-size: 40px;
+}
+
+.flex-item:first-child{
+    background-color: blueviolet;
+}
+
+.flex-item:last-child{
+    background-color: rgb(226, 230, 6);
+}
+
+/*
+https://developer.mozilla.org/es/docs/Web/CSS/flex-direction
+*/

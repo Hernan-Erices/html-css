@@ -1,0 +1,65 @@
+/* los pixeles (PX) 
+son una unidad de medida absoluta, representan una cantidad fija de píxeles en la pantalla
+comportamiento: no cambia con el tamaño de la fuente o con el contenedor.
+uso comun: para definir tamaños precisos (bordes, márgenes, iconos, etc.)
+*/
+
+/* los em (relativo al elemento padre)
+Qué son: Se basan en el tamaño de la fuente del elemento padre inmediato.
+Ejemplo: Si el elemento padre tiene font-size: 16px, entonces 1em = 16px.
+Cuidado con el "efecto cascada": si usas em en muchos niveles anidados, 
+el tamaño puede aumentar o disminuir exponencialmente si no controlas bien los tamaños base.
+*/
+
+/* rem (relativo al elemento raíz <html>)
+Qué son: Siempre se basan en el tamaño de fuente del elemento raíz (html).
+Por defecto: Navegadores suelen tener html { font-size: 16px; }, así que 1rem = 16px.
+Muy útil para mantener escalabilidad y consistencia en todo el diseño.
+*/
+
+/* los % 
+Qué son: Se calculan en relación al contenedor inmediato.
+Aplicaciones: Ancho (width), alto (height), padding, margin, font-size (con moderación).
+También se usa mucho en layouts responsivos.
+*/
+
+/* vh (viewport height) y vw (viewport width)
+Qué son: Se basan en el tamaño de la ventana gráfica (viewport).
+vh: 1% de la altura de la ventana gráfica.
+vw: 1% del ancho de la ventana gráfica.
+Ejemplo: Si la ventana gráfica tiene 1000px de ancho, 1vw = 10px.
+Ejemplo: Si la ventana gráfica tiene 1000px de alto, 1vh = 10px.
+*/
+
+/* vmin y vmax
+Qué son: Se basan en el tamaño de la ventana gráfica, pero se refieren al menor o mayor valor entre vh y vw.
+Ejemplo: Si la ventana gráfica tiene 1000px de ancho y 800px de alto, 1vmin = 8px y 1vmax = 10px.
+Ejemplo: Si la ventana gráfica tiene 800px de ancho y 1000px de alto, 1vmin = 8px y 1vmax = 10px.
+*/
+
+
+div {
+    background: 3ededed;
+    padding: 20px; 
+    font-family: 'Courier New', Courier, monospace;
+    border-left: 5px solid #999;
+    font-size: 50px;
+}
+
+h1{
+    margin: 0;
+    font-size: 1em; /* 1em = al tamano de la fuente padre es decir el div que tioene font-size: 50px */
+}
+
+span{
+    color: #999;
+    font-style: italic;
+    font-size: 2rem; /* 1rem = 16px por defecto en la mayoria de los navegadores */
+}
+
+p{
+    margin: 0;
+    font-size: 1.5rem;
+    color: #000000;
+    text-align: left;
+}

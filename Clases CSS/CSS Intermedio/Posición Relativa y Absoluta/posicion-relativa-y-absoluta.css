@@ -1,0 +1,80 @@
+body {
+    background-color: #000000;
+    margin: 0;
+    justify-items: center;
+}
+/* === POSICIÓN RELATIVA === */
+/* Las cajas con position: relative se colocan en relación a su posición original en el flujo normal del documento.
+   El espacio que ocuparían originalmente se mantiene, aunque visualmente se desplacen. */
+
+
+/* Caja con posición relativa */
+.box-relative {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(235, 77, 4); 
+    color: white;
+    position: relative; /* Punto de referencia para elementos posicionados dentro */
+}
+
+/* Modificador azul para caja relativa */
+.box--blue {
+    background-color: blue;
+    top: -40px; /* Mueve la caja 40px hacia arriba desde su posición normal */
+    left: 40px; /* Mueve la caja 40px hacia la derecha */
+    z-index: 10; /* Coloca esta caja por encima de otras con menor z-index */
+}
+
+/* Modificador rojo para caja relativa */
+.box--red {
+    background-color: rgb(158, 10, 97);
+    top: -80px;
+    left: 80px;
+    /* Nota: como no tiene `position` definido aquí, se hereda si ya tiene una clase con `relative` */
+}
+
+
+
+/*POSICIÓN ABSOLUTA*/
+/* Las cajas con position: absolute se posicionan respecto al contenedor más cercano que tenga position: relative,
+    absolute o fixed. No ocupan espacio en el flujo normal del documento, por lo que pueden superponerse libremente.
+    la posicion absoluta no ocupa lugar como las relativas*/
+    
+/* Contenedor para cajas con posición absoluta */
+.container-absolute {
+    position: relative; /* Define el contexto para las cajas absolutas que están dentro */
+    height: 400px;
+    width: 400px;
+    background-color: rgb(217, 255, 0);
+    border: 10px solid #ffffff;
+}
+
+/* Caja con posición absoluta */
+.box-absolute {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(4, 235, 77);
+    color: rgb(0, 0, 0);
+    top: auto;
+    left:auto;
+    position: absolute; /* Se posiciona respecto a su contenedor con `position: relative` */
+}
+
+/* Modificador azul para caja absoluta */
+.box--blue-abs {
+    background-color: rgb(10, 177, 255);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    z-index: 10; /* Se muestra encima si hay elementos que se superponen */
+    opacity: 0.9;
+}
+
+/* Modificador rojo para caja absoluta */
+.box--red-abs {
+    background-color: rgb(158, 10, 97);
+    top: 80px;
+    left: 80px;
+}

@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aquamarine;
+}
+
+.flexbox {
+    height: 300px;
+    border: 2px solid #000;
+    margin: 20px;
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: start;
+    align-items: center;
+
+}
+
+.flex-item {
+    background-color: orange;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    flex: 1 1 100px;
+
+}
+
+/*Esto es un align self, funciona si el flexbox esta usando align items*/
+.item-5{
+    align-self: end;
+}
+
+.flex-item:nth-child(2n){
+    background-color: blue;
+}
+
+.flex-item:last-child{
+    background-color: black;
+    align-self: end;
+}
+
+/*
+ALIGN SELF: Permite alinear un ítem individualmente dentro del contenedor flex.
+Puede sobrescribir la alineación del contenedor padre.
+
+ALIGN SELF: https://developer.mozilla.org/es/docs/Web/CSS/align-self
+*/

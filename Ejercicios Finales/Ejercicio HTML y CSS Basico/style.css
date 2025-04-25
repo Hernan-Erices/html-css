@@ -1,0 +1,79 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(to bottom, rgb(202, 8, 186), rgb(202, 8, 100)); /* degradado de color */
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+div {
+    margin-bottom: 20px;
+}
+
+.card {
+    background: linear-gradient(to top, rgb(202, 8, 186), rgb(202, 8, 100)); /* degradado de color */
+    text-align: center;
+    width: 400px;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 5%; 
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgb(183, 64, 238);
+}
+
+.card-2 {
+    background: linear-gradient(to top, rgb(7, 173, 214), rgb(8, 37, 202)); /* degradado de color */
+    text-align: center;
+    width: 400px;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 5%; 
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgb(183, 64, 238);
+}
+
+.card-3 {
+    background: linear-gradient(to top, rgb(63, 202, 8), rgb(6, 206, 212)); /* degradado de color */
+    text-align: center;
+    width: 400px;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 5%; 
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgb(183, 64, 238);
+}
+
+
+.card-title{
+    font-size: 30px;
+    padding-top: 10px;
+    font-weight: bold;
+    margin: 0;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.card-subtitle{
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color:#fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.card-description{
+    text-align: center;
+    font-size: 16px;
+    font-style: italic;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-shadow: 0 0 2px rgba(202, 8, 186, 0.7);
+}
+
+img {
+    width:70px;
+    height:auto;
+    filter: drop-shadow(0 0 5px rgb(255, 255, 255));
+}

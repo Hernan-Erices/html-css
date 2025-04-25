@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aquamarine;
+}
+
+.flexbox{
+    height: 400px;
+    border: 2px solid #000;
+    margin: 20px;
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content:space-around; /* Distribuye los elementos dejando espacio igual entre ellos,
+    el primero se alinea al principio y el último al final del contenedor (justify content es el eje principal)*/
+    
+    align-items:start; /* stretch: Estira los elementos para que ocupen todo el espacio disponible
+    en el eje cruzado del contenedor flex (comportamiento por defecto) 
+    
+    -PODEMOS USAR ALIGN ITEMS CUANDO TENEMOS UN UNICO ELEMENTO
+    */
+
+    align-content: center; /*a diferencia del justify-content, align content alinea los ejes cruzadosa
+    
+    -PODEMOS USAR ALIGN CONTENT CUANDO TENEMOS MAS DE UN ELEMENTO TANTO EN COLUMNAS COMO EN FILAS
+    */
+}
+
+.flex-item{
+
+    width: 100px;
+    background-color: red;
+    margin: 10px;
+    color: #fff;
+    text-align:center;
+    margin: auto;
+    font-size: 40px;
+}
+
+.flex-item:first-child{
+    background-color: blueviolet;
+}
+
+.flex-item:last-child{
+    background-color: rgb(226, 230, 6);
+}
+
+/*
+Alineacion de items flex: https://developer.mozilla.org/es/docs/Web/CSS/CSS_flexible_box_layout/Aligning_items_in_a_flex_container
+justify-content: https://developer.mozilla.org/es/docs/Web/CSS/justify-content
+align items: https://developer.mozilla.org/es/docs/Web/CSS/align-items
+
+*/

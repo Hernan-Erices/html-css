@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.grid{
+    display: grid;
+    height: 80vh;
+    /* grid-template-columns: auto auto 300px; 'auto' hace que cada columna tome solo el ancho necesario según su contenido */
+    grid-template-columns: 1fr 1fr 2fr; /* Dos columnas que comparten el espacio disponible en partes iguales, y una columna fija de 300px */
+    grid-template-columns: repeat(2, 1fr); /* Crea 2 columnas de igual ancho, cada una ocupa una fracción del espacio disponible */
+    grid-template-rows:auto auto;
+}
+
+.grid-item{
+    background-color: #48e;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.grid-item:first-child{
+    background-color: #f00;
+}
+
+
+
+/*
+grid: https://developer.mozilla.org/es/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout
+*/

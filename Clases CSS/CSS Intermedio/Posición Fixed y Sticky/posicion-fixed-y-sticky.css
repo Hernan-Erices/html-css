@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+}
+
+.contenedor{
+    padding: 0px;
+    background-color: blue;
+    position: relative;
+}
+
+.overlay{
+    background:linear-gradient(to top, #fff, transparent);
+    position: absolute;
+    z-index: 20;
+    width: 100%;
+    bottom: 0;
+    height: 100%;
+}
+
+h2{
+    margin: 0;
+    text-align: center;
+}
+
+p{
+    margin: 0;
+    font-size: 14px;
+}
+
+
+/*POSITION FIXED*/
+.box{
+    height: 100px;
+    width: 100%;
+    background-color: rgba(12, 214, 221, 0.959);
+    position: fixed; /* Esto hace que el elemento quede fijado en la pantalla sin importar el scroll.
+    Siempre permanece visible en la misma posición de la ventana del navegador. */
+    border: 1px solid #000000;
+    box-shadow: 0px 0px 80px #000;
+    top: 200px; /* Como está fijo, este valor indica que estará 200px desde el borde superior de la ventana. */
+    z-index: 30;
+}
+
+
+/*POSITION STICKY*/
+.box-fixed{
+    height: 150px;
+    width: 200px;
+    background-color: rgba(12, 214, 221, 0.959);
+    position: sticky; /* Hace que el elemento se comporte como "relative" hasta que se alcanza una posición de desplazamiento definida (como top, bottom, etc.).
+    Luego se comporta como "fixed", quedándose pegado dentro del contenedor padre mientras se hace scroll.
+    Es útil para cabeceras o elementos que deben permanecer visibles mientras se hace scroll, pero solo dentro de su sección. */
+    top: 20px;
+    z-index: 40;
+    box-sizing: border-box;
+}
+
+.first{
+    top: 60px;
+}
+
+.last{
+    top:120px;
+}
+
+/* MAS INFORMACION SOBRE LAS POSICIONES EN CSS
+https://developer.mozilla.org/en-US/docs/Web/CSS/position
+*/

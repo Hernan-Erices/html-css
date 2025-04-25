@@ -1,0 +1,15 @@
+/* esta es una forma de importar fuentes externas, descargada desde google fonts */
+
+@font-face {
+    font-family: "Bungee Spice";
+    font-style: normal;
+    src: url(fonts/BungeeSpice-Regular.ttf) format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Bungee Spice bold";
+    font-style: normal;
+    src: url(fonts/BungeeSpice-Regular.ttf) format("truetype");
+    font-weight:bold;
+}

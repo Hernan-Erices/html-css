@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(0, 255, 242);
+    margin: auto;
+    margin-top: 50px;
+    font-size: 80px;
+    font-weight: bold;
+    color:blueviolet;
+    text-align: center;
+
+ /* Transiciones */
+ transition-property: color, background-image, margin-top; /* Propiedades que se animarán */
+ transition-duration: 1s; /* Duración de 1 segundo para las animaciones */
+ transition-delay: 0ms; /* Sin retardo, se ejecuta de inmediato */
+
+}
+
+.box:hover{
+    background-image: url(goku.png);
+    background-size: 400px;
+    background-repeat: no-repeat;
+    color: #fff; /* Cambia el color del texto a blanco */
+    margin-top: 40px; /* Se desplaza un poco hacia arriba (de 50px a 40px) */
+}
+
+.box-box{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(0, 255, 242);
+    margin-top: 50px;
+ /* Transiciones */
+    transition-property: left; /* Solo se animará la propiedad 'left' */
+    transition-duration: 2.3s; /* Duración de la animación */
+    transition-timing-function: cubic-bezier(.98,1.38,1,-0.75); /* Curva personalizada de aceleración */
+    transition-delay: 2s; /* Espera 2 segundos antes de animar */
+
+ /* Esta línea resume lo anterior (aunque está duplicado, puedes dejar solo esta) */
+    transition: left 2.3s cubic-bezier(.98,1.38,1,-0.75) 2s;
+
+    color: red; 
+    position: relative; /* Necesario para usar la propiedad 'left' */
+    left: 0; /* Posición inicial (no movido) */
+}
+
+body:hover .box-box{
+    left: 800px; /* Se mueve 800px a la derecha */
+    background-color: rgb(255, 0, 179); /* Cambia el color de fondo (rosado fuerte) */
+}
+
+/*MAS SOBRE TRANSICIONES
+https://developer.mozilla.org/es/docs/Web/CSS/CSS_transitions/Using_CSS_transitions
+*/

@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aquamarine;
+}
+
+.flexbox{
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en una columna (de arriba hacia abajo) */
+    flex-wrap: wrap; /* Permite que los elementos salten a una nueva línea si no caben */
+    flex-flow: row-reverse wrap; /* Combina flex-direction y flex-wrap:
+    - Dirección en fila invertida (de derecha a izquierda)
+    - Permite que los elementos se envuelvan a la siguiente línea */
+    height: 100vh;
+}
+
+.flex-item{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 10px;
+
+    color: #fff;
+    text-align:center;
+    font-size: 40px;
+}
+
+.flex-item:first-child{
+    background-color: blueviolet;
+}
+
+.flex-item:last-child{
+    background-color: rgb(226, 230, 6);
+}
+
+/*
+FLEX WRAP: https://developer.mozilla.org/es/docs/Web/CSS/flex-wrap
+FLEX FLOW: https://developer.mozilla.org/es/docs/Web/CSS/flex-flow
+*/

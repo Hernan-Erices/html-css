@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+}
+
+.nav{
+    background-color: #48e;
+}
+
+.nav__list{
+    margin: 0;
+    text-align: center;
+}
+
+.nav__item {
+    display: inline-block; /* Hace que los elementos li se comporten como bloques en línea.
+                            Esto permite que estén uno al lado del otro (horizontalmente),
+                            pero aún así respeten propiedades de caja como padding y margin. */
+}
+
+.nav__link {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block; /* Permite aplicar padding y tamaño a enlaces, sin ocupar toda la línea.
+                            A diferencia del inline puro, aquí se comporta más como una caja inline. */
+    padding: 10px;
+    background-color: #48e;
+}
+
+.nav__link:hover{
+    background-color: aquamarine;
+}
+
+
+.link--button {
+    border: 1px solid #fff;
+    background-color: #fff;
+    padding: 4px 18px;
+    color: #48e;
+    border-radius: 3px;
+    margin-left: 60px;
+    /* No tiene display asignado, así que hereda el comportamiento inline (como todo <a>) */
+}
+
+.link--button:hover{
+    background-color: transparent;
+    color:#fff;
+}
+
+/*
+
+inline	Elemento en línea (no puedes usar width, height, ni padding vertical).
+
+block	Elemento de bloque (ocupa todo el ancho disponible).
+
+inline-block	Combinación: en línea, pero puedes usar padding, margin, width, height.
+
+flex	Activa Flexbox: permite alinear y distribuir hijos fácilmente.
+
+inline-flex	Igual que flex, pero el contenedor se comporta como inline.
+
+grid	Activa Grid layout: sistema de filas y columnas.
+
+inline-grid	Igual que grid, pero el contenedor se comporta como inline.
+
+none	Oculta completamente el elemento (ni ocupa espacio).
+
+contents	Elimina el contenedor, dejando sólo sus hijos en el DOM visualmente.
+
+table, table-row, table-cell, etc.
+
+https://developer.mozilla.org/es/docs/Web/CSS/display
+*/

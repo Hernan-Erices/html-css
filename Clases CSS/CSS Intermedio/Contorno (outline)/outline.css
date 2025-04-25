@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aliceblue;
+}
+
+.box{
+    width: 400px;
+    background-color: red;
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px;
+    border: 5px solid #000;
+
+/* Define el color del contorno del elemento.
+    A diferencia del borde (border), el outline no afecta el tamaño del elemento. */
+    outline-color: blue;
+
+/* Establece el grosor del contorno. */
+    outline-width: 10px;
+
+/* Define el estilo del contorno. Puede ser solid, dotted, dashed, double, etc. */
+    outline-style: solid;
+
+/* Forma abreviada (shorthand) para establecer el ancho, estilo y color del contorno
+    en una sola línea. Esta línea sobrescribe las tres anteriores. */
+    outline: 5px solid blue;
+
+/* Agrega espacio entre el contorno y el borde del elemento.
+    Se desplaza el contorno hacia afuera (positivos) o hacia adentro (negativos). */
+    outline-offset: 5px;
+    }
+
+.box:hover{
+    outline: 10px solid green;
+}
+
+input{
+    margin: 100px;
+    border: none;
+    border-top: 2px solid #f4d;
+    padding: 6px;
+    
+}
+
+input:focus{
+    border-color: aqua;
+    color: aqua;
+}
+input:focus-visible{
+    outline: none;
+}
+
+/*
+OUTLINE: https://developer.mozilla.org/en-US/docs/Web/CSS/outline
+*/

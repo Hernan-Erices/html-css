@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(11, 1, 7);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    box-sizing: border-box;
+}
+
+div{
+    box-sizing: border-box;
+}
+
+nav, header, footer, aside,main{
+    padding: 20px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    background-color: rgb(31, 14, 2);
+}
+
+.grid{
+    flex-grow: 1;
+    display: grid;
+    grid-auto-flow: dense;
+    margin: auto; 
+    gap: 10px;
+    padding: 10px;
+    max-width: 100%;
+    width: 100%;
+    grid-template-areas: "nav main aside"; /* Definicion de las areas de la grilla, se pueden usar nombres para las areas y luego asignar los elementos a esas areas */
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+header{
+    color: white;
+    width: 100%;
+    height: 100vh;
+    padding-top: 30px;
+    text-align: center;
+
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    width: 100%;
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+    
+}
+
+footer {
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+}
+
+nav, aside{
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "nav"
+            "main";
+    }
+
+    nav, aside {
+        position: static;
+        height: auto;
+    }
+
+    aside {
+        display: none;
+    }
+
+    main {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "nav"
+            "main";
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "nav"
+            "main";
+    }
+}
+
+
+
+/*
+Grid areas: https://developer.mozilla.org/es/docs/Web/CSS/grid-template-areas
+*/

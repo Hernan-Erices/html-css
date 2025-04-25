@@ -1,0 +1,33 @@
+/* Pseudoclase :hover — cuando el mouse pasa por encima */
+a:hover {
+    color: red;
+    text-decoration: underline;
+    }
+
+/* Pseudoclase :visited — cuando el enlace ya fue visitado */
+a:visited {
+    color: purple;
+    }
+
+/* Pseudoclase :first-child — aplica al primer hijo de un padre */
+ul li:first-child {
+    font-weight: bold;
+    }
+
+/* Pseudoclase :last-child — aplica al último hijo */
+ul li:last-child {
+    color: green;   
+    }
+
+/* Pseudoclase :nth-child(2) — segundo hijo */
+ul li:nth-child(2) {
+    background-color: #8a1010;
+    }
+
+/* Pseudoclase :focus — cuando el input está enfocado */
+input:focus {
+    border: 2px solid blue;
+    outline: none;
+    }
+    
+  /* También podrías usar :checked, :disabled, :not(), etc. */

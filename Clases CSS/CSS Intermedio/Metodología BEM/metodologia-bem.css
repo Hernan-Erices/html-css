@@ -1,0 +1,20 @@
+/* BLOQUE */
+/* ".lista" es el BLOQUE principal que representa una lista de ingredientes */
+.lista {
+    border: 2px solid #000;
+}
+
+/* MODIFICADOR DE BLOQUE */
+/* ".lista--vieja" es un MODIFICADOR que cambia la apariencia del bloque ".lista" */
+.lista--vieja {
+    opacity: 0.3;
+    background-color: aqua;
+}
+
+/* ELEMENTO */
+/* ".lista__item" es un ELEMENTO hijo del bloque ".lista" */
+.lista__item {
+    color: gray;
+    margin: 10px 0;
+    list-style: square;
+}
