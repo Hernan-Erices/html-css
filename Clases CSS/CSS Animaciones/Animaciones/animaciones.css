@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #ccc;
+}
+
+div{
+    box-sizing: border-box;
+}
+
+
+.box{
+    margin: 20px;
+    background-color: #fff;
+    border: 4px solid #48e;
+    padding: 6px;
+    border-radius: 39px;
+}
+
+.barra {
+    padding: 40px;
+    background-color: #48e;
+    border-radius: 30px;
+    width: 10%;
+    animation-name: llenar-barra;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.barra:active{
+    animation-play-state: paused;
+}
+
+@keyframes llenar-barra{
+    from{
+        width: 0%;
+        background-color: #f33;
+    }   
+    to{
+        width: 100%;
+        background-color: aqua;
+    }
+}

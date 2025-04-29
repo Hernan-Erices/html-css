@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #ccc;
+    height: 200vh;
+
+
+    scroll-timeline-name: --body;
+    scroll-timeline-axis: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.container {
+    scroll-timeline: --containerScroll;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+/*
+.crecedor{
+    height: 200vh;
+}
+*/
+
+.box{
+    background-color: #fff;
+    border: 4px solid #48e;
+    padding: 6px;
+    border-radius: 39px;
+    position: fixed;
+    width: 100%;
+}
+
+.barra {
+    padding: 40px;
+    background-color: #48e;
+    border-radius: 30px;
+    width: 10%;
+    animation-name: llenar-barra;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    
+    animation-timeline: --containerScroll;
+    animation-timeline: scroll(); /*Scroll original, sin usar otro scroll de otro contenedor*/
+}
+
+.barra:active{
+    animation-play-state: paused;
+}
+
+@keyframes llenar-barra{
+    from{
+        width: 0%;
+        background-color: #f33;
+    }   
+    to{
+        width: 100%;
+        background-color: aqua;
+    }
+}
+
+
+/*
+CSS Scroll animations: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scroll-driven_animations
+
+Hora: 19:03:26 dalto explica otra forma de animacion para view o vista, cuando el elemento
+        empieza a ser visible realiza una animacion y cuando desaparece deja de hacer la animacion usando:
+        a diferencia scroll usamos view
+        animation-timeline: view();
+        view-timeline: --animacionview block;
+
+
+        RANGO DE ANIMACIONES: https://developer.mozilla.org/en-US/docs/Web/CSS/animation-range
+        VISUALIZADOR DE RANGO: https://scroll-driven-animations.style/tools/view-timeline/ranges/#range-start-name=cover&range-start-percentage=0&range-end-name=cover&range-end-percentage=100&view-timeline-axis=block&view-timeline-inset=0&subject-size=smaller&subject-animation=reveal&interactivity=clicktodrag&show-areas=yes&show-fromto=yes&show-labels=yes
+        
+        Ver tambien el apartado de rango de animaciones
+        animation-range-start: cover/contain 20% ;
+        animation-range-end: cover/contain 80% ;
+
+*/
